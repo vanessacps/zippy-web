@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  .input-label {
+    @apply font-semibold text-gray-500
+  }
+
+  .input {
+    @apply w-full bg-gray-100 border-0
+    focus:ring-2 focus:ring-orange-100 outline-none 
+    py-2.5 px-2 text-sm text-justify rounded-[0.25rem] 
+    placeholder:text-gray-400 font-medium tracking-wide transition-all;
+  }
+
+  .form-input {
+    @apply rounded-sm focus:ring-orange-100 border-none ring-1 ring-gray-300 py-2.5 px-2 text-sm
+    placeholder:text-gray-400  outline-none transition-all
+  }
+
+  .input-underline {
+    @apply rounded-sm focus:border-b-orange-100 border-0 focus:ring-0 border-b-2 border-gray-300 py-2.5 px-2 text-sm
+    placeholder:text-gray-400 outline-none transition-all
+  }
+
+  .text-primary {
+    @apply text-white;
+  }
+
+  .text-secondary {
+    @apply text-gray-600;
+  }
+
+  .primary-button {
+    @apply bg-orange-100 text-white py-2.5 rounded-[0.25rem] font-normal hover:bg-opacity-80 transition-all;
+  }
+
+  .secondary-button {
+    @apply text-orange-100 ring-1 ring-orange-100  py-2.5 rounded-[0.25rem] font-semibold hover:bg-opacity-80 transition-all;
+  }
+
+  .primary-button-noborder {
+    @apply bg-orange-100 text-white py-2.5 font-semibold hover:bg-opacity-80 transition-all;
+  }
+
+  .outline-button {
+    @apply py-2.5 rounded-[0.25rem] font-semibold hover:opacity-50 transition-all text-gray-600;
+  }
+}
+
+.hexagon {
+  width: 100%;
+  padding-bottom: 115.47%; /* Proporção para criar um hexágono perfeito */
+  background-color: black;
+  position: absolute;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.tb-400 {
+  width: 400px;
+}
+
+.tb-150 {
+  width: 150px;
+}
